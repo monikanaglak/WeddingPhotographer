@@ -1,3 +1,11 @@
+let photo_one = document.querySelector(".couple");
+
+const t1 = new TimelineMax();
+//od tego zaczynaj animacje, od opacity 0
+t1.from(photo_one, { opacity: 0, duration: 3 })
+  .from(photo_one, { opacity: 1, duration: 3 })
+  .from(".verre", { opacity: 0, duration: 3, delay: -0.01 })
+  .from(".verre", { opacity: 0.999, duration: 3 });
 
 /*
 let hero = document.querySelector(".hero");
