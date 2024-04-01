@@ -7,20 +7,24 @@ header {
   position: sticky;
   width: 100%;
   height: 50px;
-
+  height: 15vh;
+  background-color:#e3e3e3;
 }
 ul{
   display: flex;
   justify-content: space-evenly;
-  line-height: 50px;
-  margin-left:auto;
-  margin-right: auto;
-  width: 90%;
+  align-items: center;
+  height: 100%;
 }
 ul li{
   text-decoration: none;
   list-style: none;
-  font-size:1.2rem;
+  font-size:1.3rem;
+}
+ul li a{
+  color:black;
+  opacity: 70%;
+  text-decoration: none;
 }
 img{
   height: 500px;
@@ -33,11 +37,7 @@ section {
   margin-left: auto;
   margin-right: auto;
   align-items: center;
-  border:1px solid green;
 }
-
-
-
 .responsive-menu{
     display: none;
 }
@@ -45,6 +45,7 @@ section {
     display: block;
     z-index: 9999;
 }
+
 @media (max-width: 800px) {
    nav a{
     display: none;
